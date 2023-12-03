@@ -14,25 +14,25 @@
 
 <body>
 
-    <div class="nav-links">
-            <button onclick=hideSidebar()><i class="fa-solid fa-xmark"></i></button>
-            <a href="#" class="alink">Home</a>
-            <a href="#" class="alink">Ticket Booking</a>
-            <a href="#" class="alink">Cart</a>
-            <a href="#" class="alink">Terms and Conditions</a>
-            <a href="#" class="btn">Sign in</a>
+    <div class="sidebar">
+        <button onclick=hideSidebar()><i class="fa-solid fa-xmark"></i></button>
+        <a href="#" class="alink">Home</a>
+        <a href="#" class="alink">Ticket Booking</a>
+        <a href="#" class="alink">Cart</a>
+        <a href="#" class="alink">Terms and Conditions</a>
+        <a href="#" class="btn">Sign in</a>
     </div>
 
     <nav>
-    
         <img src="./imgs/logo.svg" alt="">
-        <div class="links">
+        <div class="links hide">
             <a href="#" class="alink">Home</a>
             <a href="#" class="alink">Ticket Booking</a>
             <a href="#" class="alink">Cart</a>
             <a href="#" class="alink">Terms and Conditions</a>
             <a href="#" class="btn">Sign in</a>
         </div>
+        
         <div class="mob-links">
             <i class="fa-solid fa-bars" onclick=showSidebar()></i>
         </div>
@@ -176,11 +176,11 @@
 
 <script>
     function showSidebar(){
-        const sidebar=document.querySelector('.nav-links');
+        const sidebar=document.querySelector('.sidebar');
         sidebar.style.display = 'flex';
     }
     function hideSidebar(){
-        const sidebar=document.querySelector('.nav-links');
+        const sidebar=document.querySelector('.sidebar');
         sidebar.style.display = 'none';
     }
 </script>
